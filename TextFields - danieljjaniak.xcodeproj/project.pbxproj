@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E82FB3E1CA8D9E200C8ADB5 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82FB3D1CA8D9E200C8ADB5 /* ZipCodeTextFieldDelegate.swift */; };
+		4E82FB401CAA204000C8ADB5 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82FB3F1CAA204000C8ADB5 /* CashTextFieldDelegate.swift */; };
+		4E82FB421CAA288E00C8ADB5 /* LockableTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82FB411CAA288E00C8ADB5 /* LockableTextFieldDelegate.swift */; };
 		4E842D041CA37C1800E4EE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E842D031CA37C1800E4EE63 /* AppDelegate.swift */; };
 		4E842D061CA37C1800E4EE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E842D051CA37C1800E4EE63 /* ViewController.swift */; };
 		4E842D091CA37C1800E4EE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E842D071CA37C1800E4EE63 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		4E82FB3D1CA8D9E200C8ADB5 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4E82FB3F1CAA204000C8ADB5 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4E82FB411CAA288E00C8ADB5 /* LockableTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockableTextFieldDelegate.swift; sourceTree = "<group>"; };
 		4E842D001CA37C1800E4EE63 /* TextFields - danieljjaniak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TextFields - danieljjaniak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E842D031CA37C1800E4EE63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E842D051CA37C1800E4EE63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			children = (
 				4E842D161CA390AE00E4EE63 /* RandomColorTextFieldDelegate.swift */,
 				4E82FB3D1CA8D9E200C8ADB5 /* ZipCodeTextFieldDelegate.swift */,
+				4E82FB3F1CAA204000C8ADB5 /* CashTextFieldDelegate.swift */,
+				4E82FB411CAA288E00C8ADB5 /* LockableTextFieldDelegate.swift */,
 			);
 			name = "Text Field Delegates";
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 			files = (
 				4E842D061CA37C1800E4EE63 /* ViewController.swift in Sources */,
 				4E842D041CA37C1800E4EE63 /* AppDelegate.swift in Sources */,
+				4E82FB401CAA204000C8ADB5 /* CashTextFieldDelegate.swift in Sources */,
+				4E82FB421CAA288E00C8ADB5 /* LockableTextFieldDelegate.swift in Sources */,
 				4E842D171CA390AE00E4EE63 /* RandomColorTextFieldDelegate.swift in Sources */,
 				4E82FB3E1CA8D9E200C8ADB5 /* ZipCodeTextFieldDelegate.swift in Sources */,
 			);

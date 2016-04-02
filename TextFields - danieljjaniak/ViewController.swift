@@ -13,6 +13,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Outlets
     @IBOutlet var textField1: UITextField!
     @IBOutlet var textField2: UITextField!
+    @IBOutlet var textField3: UITextField!
+    @IBOutlet var cashTextField: UITextField!
+    
+    @IBOutlet var enableEditSwitch: UISwitch!
     
     // Variables
     var timer: NSTimer!
@@ -20,6 +24,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Text Field Delegate objects
     var randomColorDelegate = RandomColorTextFieldDelegate()
     var zipCodeDelegate = ZipCodeTextFieldDelegate()
+    var cashDelegate = CashTextFieldDelegate()
+    
+    var lockableTextFieldDelegate: LockableTextFieldDelegate!
+    
     
     
     override func viewDidLoad() {
@@ -27,12 +35,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         self.textField1.delegate = randomColorDelegate
         self.textField2.delegate = zipCodeDelegate
+        
+        self.cashTextField.delegate = cashDelegate
+        
+        self.lockableTextFieldDelegate = LockableTextFieldDelegate(lockSwitch: enableEditSwitch)
+        self.textField3.delegate = lockableTextFieldDelegate
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    @IBAction func allowEditingToggled(sender: UISwitch) {
+        if !sender.on {
+            textField3.endEditing(true)
+        }
+    }
+    
     
     
     // Text Field Delegate Methods
